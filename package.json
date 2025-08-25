@@ -1,0 +1,45 @@
+{
+  "name": "gcp_read_email",
+  "version": "1.0.0",
+  "description": "POC to enable a push based mechanism to read my emails",
+  "homepage": "https://github.com/rutharya/gcp_read_email#readme",
+  "bugs": {
+    "url": "https://github.com/rutharya/gcp_read_email/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rutharya/gcp_read_email.git"
+  },
+  "license": "ISC",
+  "author": "Ruthvik Arya",
+  "type": "commonjs",
+  "main": "dist/server.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "dev": "ts-node-dev --respawn --transpile-only src/server.ts",
+    "setup:watch": "ts-node src/setupWatch.ts"
+  },
+  "keywords": [
+    "gmail",
+    "webhook",
+    "push",
+    "nodejs",
+    "typescript",
+    "pubsub"
+  ],
+  "dependencies": {
+    "@google-cloud/pubsub": "^4.5.0",
+    "body-parser": "^1.20.2",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "googleapis": "^140.0.0"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/node": "^20.14.2",
+    "ts-node": "^10.9.2",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.4.5"
+  }
+}

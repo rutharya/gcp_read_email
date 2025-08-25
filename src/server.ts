@@ -59,7 +59,7 @@ app.post("/webhook/gmail-push", (req: Request, res: Response) => {
 
     // Asynchronously process the notification.
     // Do NOT await this, as it would delay the 200 OK acknowledgment.
-    processGmailNotification(historyId, emailAddress).catch(console.error);
+    processGmailNotification(emailAddress).catch(console.error);
   } catch (error) {
     console.error("Error decoding or processing Pub/Sub message:", error);
   }

@@ -3,8 +3,9 @@
 import { google } from "googleapis";
 import { authorize } from "../auth/googleAuth";
 
-const SENDER_EMAIL = "ruthvik.arya91@gmail.com";
-const SUBJECT_PATTERN = /Action: (.+)/;
+// const SENDER_EMAIL = "ruthvik.arya91@gmail.com";
+const SENDER_EMAIL = "remotex.advisor1@gmail.com";
+const SUBJECT_PATTERN = /Invitation to NUCLeUS Live session*/;
 const LINK_PATTERN = /(https?:\/\/[^\s]+)/;
 
 /**

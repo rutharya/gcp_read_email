@@ -18,7 +18,8 @@
     "build": "tsc",
     "start": "node dist/server.js",
     "dev": "ts-node-dev --respawn --transpile-only src/server.ts",
-    "setup:watch": "ts-node src/setupWatch.ts"
+    "setup:watch": "ts-node src/setupWatch.ts",
+    "cleanup": "ts-node src/cleanup.ts"
   },
   "keywords": [
     "gmail",

@@ -68,5 +68,6 @@ app.post("/webhook/gmail-push", (req: Request, res: Response) => {
 app.listen(port, () => {
   console.log("===========================================================");
   console.log(`🚀 Server listening on port ${port}`);
+  console.log(`   Webhook Endpoint: /webhook/gmail-push`);
   console.log("===========================================================");
 });
